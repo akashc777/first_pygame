@@ -48,7 +48,6 @@ def game_loop():
     x = (0)
     y = (game_height-160)
     y_change = 0
-    w=0
     h = 100
     count=0
     obs_number = random.randrange(1, 7)
