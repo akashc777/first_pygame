@@ -77,18 +77,8 @@ def game_loop():
     #obs(obsn,obsx, obxy)
         gameDis.fill(gray)
 
-        if obs_number == 1:
-            w = carImg[1].get_width()
-        if obs_number == 2:
-            w = carImg[2].get_width()
-        if obs_number == 3:
-            w = carImg[3].get_width()
-        if obs_number == 4:
-            w = carImg[4].get_width()
-        if obs_number == 5:
-            w = carImg[5].get_width()
-        if obs_number == 6:
-            w = carImg[6].get_width()
+        w = carImg[obs_number].get_width()
+
         if x +144 > obs_startx and x < obs_startx + w:
             if y < obs_starty+70 and y+70 > obs_starty :
                 message_display('GAME OVER !!',100,(400,300),1,red)
