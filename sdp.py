@@ -57,7 +57,7 @@ def game_loop():
     obs_speed = 5
 
 
-    
+
     while not False :
 
         event = pygame.event.poll()
@@ -91,7 +91,7 @@ def game_loop():
             w = carImg[6].get_width()
         if x +144 > obs_startx and x < obs_startx + w:
             if y < obs_starty+70 and y+70 > obs_starty :
-                message_display('CRASHED',100,(400,300),1)
+                message_display('GAME OVER !!',100,(400,300),1)
                 time.sleep(1)
                 obs_startx = -300
                 count=0
