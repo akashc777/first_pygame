@@ -95,6 +95,7 @@ def game_loop():
                 time.sleep(1)
                 obs_startx = -300
                 count=0
+                obs_speed = 5
         if (y < 0 and y_change == -5) or (y > game_height-100 and y_change == 5):
             y_change = 0
             #message_display('end point!',100,(400,300))
