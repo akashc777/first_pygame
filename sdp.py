@@ -7,7 +7,7 @@ game_height = 600
 gameDis = pygame.display.set_mode((game_width,game_height))
 pygame.display.set_caption("Race it !!")
 black = (0,0,0)
-white = (128,128,128)
+gray = (128,128,128)
 red = (255,0,0)
 clock = pygame.time.Clock()
 carImg = [pygame.image.load("car/car1.png"), pygame.image.load("car/car2.png"), pygame.image.load("car/car3.png"),pygame.image.load("car/car4.png"), pygame.image.load("car/car5.png"), pygame.image.load("car/car6.png"), pygame.image.load("car/car7.png")]
@@ -79,7 +79,7 @@ def game_loop():
                     y_change = 0
 
     #obs(obsn,obsx, obxy)
-        gameDis.fill(white)
+        gameDis.fill(gray)
 
         if obs_number == 1:
             w = carImg[1].get_width()
@@ -111,7 +111,7 @@ def game_loop():
         score(count)
         if rect_x<-660 :
             rect_x = game_width
-    
+
 
         if obs_startx<-250 :
             obs_startx = game_width+268
