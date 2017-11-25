@@ -57,7 +57,7 @@ def game_loop():
     obs_speed = 5
 
 
-    i=0
+    
     while not False :
 
         event = pygame.event.poll()
