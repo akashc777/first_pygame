@@ -55,8 +55,8 @@ def game_loop():
     obs_starty = random.randrange(0, game_height-h)
     obs_startx = game_width+600
     obs_speed = 5
-    rect_y = 300
-    rect_x = game_width
+
+
     i=0
     while not False :
 
@@ -100,13 +100,12 @@ def game_loop():
             #message_display('end point!',100,(400,300))
         y+=y_change
         obs_startx -= obs_speed
-        rect_x -= obs_speed
+
 
         car(x,y)
         obs(obs_number, obs_startx, obs_starty)
         score(count)
-        if rect_x<-660 :
-            rect_x = game_width
+
 
 
         if obs_startx<-250 :
