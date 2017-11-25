@@ -5,7 +5,7 @@ pygame.init()
 game_width = 800
 game_height = 600
 gameDis = pygame.display.set_mode((game_width,game_height))
-pygame.display.set_caption("Race it !!")
+pygame.display.set_caption("WORNG WAY !!!!")
 black = (0,0,0)
 gray = (128,128,128)
 red = (255,0,0)
