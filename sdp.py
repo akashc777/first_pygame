@@ -113,6 +113,7 @@ def game_loop():
             obs_number = random.randrange(1, 7)
             obs_starty = random.randrange(0, game_height-100)
             count +=5
+            obs_speed +=1
 
 
         pygame.display.update()
