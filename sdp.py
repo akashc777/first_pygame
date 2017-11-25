@@ -41,12 +41,8 @@ while not start :
         time.sleep(0.3)
 
     start = True
-class rect    :
-    def rect(rect_x,rect_y):
-        pygame.draw.rect(gameDis,(255,255,255),(rect_x,rect_y,200,20))
 
-r1 = rect
-r2 = [rect, rect,rect]
+
 
 def game_loop():
     x = (0)
