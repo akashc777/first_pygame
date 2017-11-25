@@ -18,17 +18,17 @@ def car(x,y):
 def obs(obsn,obsx, obsy):
     gameDis.blit(carImg[obsn],(obsx,obsy))
 
-def message_display(text,size,l,a):
+def message_display(text,size,l,ca,color):
     textF = pygame.font.SysFont('timesnewroman', size, True, False)
-    textS = textF.render(text, True, black)
+    textS = textF.render(text, True, color)
     textA = textS.get_rect()
-    if a == 1:
+    if ca == 1:
      textA.center = l
     gameDis.blit(textS, textA)
     pygame.display.update()
 
 def score(count) :
-     message_display('Score :'+str(count), 25, (0,0),0)
+     message_display('Score :'+str(count), 25, (0,0),0,black)
 
 start = False
 count = [3, 2, 1]
@@ -36,7 +36,7 @@ while not start :
     for n in count:
         for s in range(100,300):
             gameDis.fill((255,255,255))
-            message_display(str(n),s,(400,300),1)
+            message_display(str(n),s,(400,300),1,black)
             pygame.display.update()
         time.sleep(0.3)
 
@@ -91,10 +91,10 @@ def game_loop():
             w = carImg[6].get_width()
         if x +144 > obs_startx and x < obs_startx + w:
             if y < obs_starty+70 and y+70 > obs_starty :
-                message_display('GAME OVER !!',100,(400,300),1)
+                message_display('GAME OVER !!',100,(400,300),1,red)
                 time.sleep(1)
                 obs_startx = -300
-                count=0
+                count=-5
                 obs_speed = 5
         if (y < 0 and y_change == -5) or (y > game_height-100 and y_change == 5):
             y_change = 0
