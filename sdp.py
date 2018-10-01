@@ -1,4 +1,4 @@
-import pygame
+import pygame                                #adding the libraries and i have done changes in line 20 just delete that line
 import time
 import random
 pygame.init()
@@ -17,7 +17,7 @@ def car(x,y):
 
 def obs(obsn,obsx, obsy):
     gameDis.blit(carImg[obsn],(obsx,obsy))
-
+     raw_input()
 def message_display(text,size,l,ca,color):
     textF = pygame.font.SysFont('timesnewroman', size, True, False)
     textS = textF.render(text, True, color)
